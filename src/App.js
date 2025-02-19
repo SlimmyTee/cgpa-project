@@ -8,10 +8,6 @@ import SemesterButton from './components/SemesterButton';
 import SemiCircleProgressBar from './components/SemiCircleProgressBar';
 import { CourseObject, calculateCGPA } from './utils';
 
-
-
-
-
 function App() {
 
   const [semesters, setSemesters] = useState([])
@@ -40,10 +36,6 @@ function App() {
   }, [semesters]);
 
 
-
-
-
-
   const addCourse = (semesterIndex, course) => {
     const newSemesters = [...semesters];
     newSemesters[semesterIndex].courses.push(course);
@@ -66,16 +58,6 @@ function App() {
   const checkIfSemesterActive = (semesterIndex) => {
     return (semesterIndex === activeSemesterID)
   }
-
-
-
-  // const updateCourse = (semesterIndex, courseIndex) => {
-  //   const newSemesters = [...semesters];
-  //   let semester = newSemesters[semesterIndex];
-
-  //   semester.courses[courseIndex].unit 
-  // }
-
 
   const handleUnitChange = (semesterIndex, courseIndex, unit) => {
     const newSemesters = [...semesters];
@@ -114,8 +96,6 @@ function App() {
     setSemesters(newSemesters)
   }
 
-
-
   const handleDeleteCourse = (semesterIndex, courseIndex) => {
     const newSemesters = [...semesters];
     let semester = newSemesters[semesterIndex];
@@ -139,8 +119,6 @@ function App() {
       setActiveSemester(Math.max(activeSemesterID - 1, 0))
     }
     setSemesters(newSemesters);
-
-
   }
 
   const handleViewAnalysis = () => {
