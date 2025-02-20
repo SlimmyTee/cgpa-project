@@ -140,7 +140,7 @@ function App() {
     </div> */}
     <div className='content flex flex-col grow p-3 px-7 gap-1'>
       {/* Header */}
-      <span className='content__header mb-2 border-b-4 border-indigo-500 self-start pb-3'>GPA CALCULATOR</span>
+      <span className='content__header mb-2 border-b-4 border-indigo-500 self-start pb-3'>CGPA CALCULATOR</span>
 
       {/* Dialup section */}
       <div className='flex border-b-2  pb-3'>
